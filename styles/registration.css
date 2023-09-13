@@ -1,0 +1,125 @@
+body{
+  overflow: hidden;
+}
+
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  padding-block: 1rem;
+}
+
+.register-container .register-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 65%;
+  height: 80%;
+  background: #423d9e;
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #423d9e;
+  overflow: scroll;
+}
+
+.register-container .register-card form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 100%;
+  gap: 1rem;
+}
+
+.register-card::-webkit-scrollbar {
+  display: none;
+}
+
+.register-container .register-card input {
+  width: 40%;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0rem 0rem 0rem 1rem;
+  background-color: #ffffff;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+.register-container .register-card form #payment {
+  width: 90%;
+}
+.register-container .register-card form #participate {
+  width: 90%;
+}
+
+.register-container .register-card select {
+  width: 42%;
+  height: 3rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0rem 0rem 0rem 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  color: #0e1120;
+}
+.register-container .register-card select option {
+  color: black;
+}
+
+.register-container .register-card #online {
+  width: 10%;
+  height: 1.5rem;
+}
+
+.register-container .register-card #offline {
+  width: 10%;
+  height: 1.5rem;
+}
+
+.register-container .register-card #a {
+  width: 30%;
+}
+
+.register-container .register-card #b {
+  width: 40%;
+}
+
+.register-container .register-card #one {
+  width: 10%;
+  height: 1.5rem;
+}
+
+.register-container .register-card #two {
+  width: 10%;
+  height: 1.5rem;
+}
+
+.register-container .register-card #c {
+  width: 30%;
+}
+
+.register-container .register-card #d {
+  width: 40%;
+}
+
+.register-container .register-card #payment-screenshot {
+  width: 86%;
+  height: 6rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0rem 0rem 0rem 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+}
+
+.register-container .register-card #submit {
+  width: 89%;
+  height: 3rem;
+  padding: 0;
+  background-color: #f3aeff;
+  color: black;
+}
