@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+  /* colors  */
+  --primary-clr: #423d9e;
+  --secondary-clr: #2cb685;
+  --button-clr: #37bdd2;
+
+  /* fonts  */
+  --primary-font: 'Aldrich', sans-serif;
+  --secondary-font: 'Rubik', sans-serif;
+}
