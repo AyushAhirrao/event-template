@@ -1,1 +1,121 @@
-/* temp  */
+.rootContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 95%;
+}
+
+.heroTitleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroTitleWrapper .logo img {
+  width: 20rem;
+}
+
+.heroTitleWrapper .title h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: var(--primary-font);
+}
+
+.heroTitleDescription {
+  width: 80%;
+}
+
+.heroTitleDescription p {
+  color: white;
+  font-family: var(--secondary-font);
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.heroPrizesWrapper {
+  width: 80%;
+  transform: translateX(5rem);
+}
+
+.heroPrizesWrapper .title h1 {
+  color: var(--tertiary-clr);
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+}
+
+.heroPrizesWrapper .prizeAmountContainer {
+  transform: translateX(2rem);
+  margin-top: 1rem;
+}
+
+.heroPrizesWrapper .prizeAmountContainer h1 {
+  color: white;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+}
+
+.infoWrapper {
+  transform: translateY(-2rem);
+}
+.registrationCountContainer {
+  background: var(--secondary-clr);
+  width: 60vw;
+  height: 4rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#count{
+    color: white;
+    text-shadow: 1px 1px 5px ;
+}
+
+.registrationCountContainer h1 {
+  margin-left: 2rem;
+  font-family: var(--primary-font);
+  color: var(--root-clr);
+}
+
+.hurryUpContainer {
+  background: var(--secondary-clr);
+  width: 20vw;
+  height: 4rem;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hurryUpContainer h1 {
+  margin-left: 2rem;
+  font-family: var(--primary-font);
+  color: var(--root-clr);
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* responsive  */
+
+@media only screen and (max-width: 774px) {
+}
