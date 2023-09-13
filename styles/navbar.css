@@ -1,1 +1,50 @@
-/* temp  */
+header {
+  background: var(--primary-clr);
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .brand img {
+  width: 3rem;
+}
+
+nav .navLinks ul li {
+  display: inline-block;
+  color: white;
+  font-family: var(--secondary-font);
+  transition: 0.3s ease;
+}
+
+nav .navLinks ul li:hover {
+  color: var(--secondary-clr);
+}
+
+nav .navLinks ul li:not(:last-child) {
+  margin-right: 3rem;
+}
+
+nav .cta button {
+  background: var(--button-clr);
+  color: white;
+  border-radius: 50px;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+  transition: 0.3s ease;
+}
+
+nav .cta button:hover {
+  background: var(--secondary-clr);
+}
