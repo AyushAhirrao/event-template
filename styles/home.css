@@ -79,9 +79,9 @@
   align-items: center;
 }
 
-#count{
-    color: white;
-    text-shadow: 1px 1px 5px ;
+#count {
+  color: white;
+  text-shadow: 1px 1px 5px;
 }
 
 .registrationCountContainer h1 {
@@ -117,5 +117,35 @@
 }
 /* responsive  */
 
-@media only screen and (max-width: 774px) {
+@media only screen and (max-width: 1115px) {
+  .hurryUpContainer {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+}
+
+@media only screen and (max-width: 957px) {
+  .registrationCountContainer {
+    width: 70vw;
+  }
+
+  .heroTitleWrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 957px) {
+  .registrationCountContainer {
+    width: 70vw;
+  }
+
+  .heroTitleDescription {
+    width: 100%;
+  }
+    .heroTitleDescription p{
+        text-align: center;
+    }
 }
