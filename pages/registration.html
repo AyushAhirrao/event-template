@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../styles/utils.css">
 
     <!-- scripts -->
-    <script  src="../scripts/handle_payment.js" defer></script>
+    <script src="../scripts/handle_payment.js" defer></script>
 </head>
 
 <body>
@@ -42,7 +42,7 @@
 
     <div class="register-container">
         <div class="register-card">
-            <h1>Registration Form</h1>
+            <h3>Registration Form</h3>
             <form
                 action="https://docs.google.com/forms/d/e/1FAIpQLSf4H3lAKsj_fXSzgDWkT4f15-ZtOrsCFwkoyjb-aEMPQfGY9Q/formResponce">
                 <input type="text" id="name" name="entry.1928113808" placeholder="Name" required /><br /><br />
@@ -70,31 +70,34 @@
                     <option value="cm">First Year</option>
                     <option value="if">Second Year</option>
                     <option value="e&tc">Third Year</option>
-                    ><br /><br />
+                </select><br /><br />
 
 
-                    <label for="payment" id="payment">Your Preffered payment method ?</label>
-                    <input type="radio" id="online" name="entry.877435027" value="online" required />
-                    <label for="online" id="a">UPI</label>
-                    <input type="radio" id="offline" name="entry.877435027" value="offline" required />
-                    <label for="offline" id="b">Cash (Spot Entry)</label><br /><br />
+                <label for="payment" id="payment">Your Preffered payment method ?</label>
+                <input type="radio" id="online" name="entry.877435027" value="online" required />
+                <label for="online" id="a">UPI</label>
+                <input type="radio" id="offline" name="entry.877435027" value="offline" required />
+                <label for="offline" id="b">Cash (Spot Entry)</label><br /><br />
 
-                    <label for="participation" id="participate">How you will be participating ?</label>
-                    <input type="radio" id="one" name="entry.630845017" value="one" required />
-                    <label for="one" id="c">Individual</label>
-                    <input type="radio" id="two" name="entry.630845017" value="two" required />
-                    <label for="two" id="d">Team (max 2 members)</label><br /><br />
+                <div id="online-payment" style="display: none">
+                    <img src="../assets/images/qr.jpg" alt="QR code" width="400px" height="400px">
+                </div>
 
-                    <input type="text" id="teamcode" name="entry.241959471" placeholder="Team Code"
-                        required /><br /><br />
+                <label for="participation" id="participate">How you will be participating ?</label>
+                <input type="radio" id="one" name="entry.630845017" value="one" required />
+                <label for="one" id="c">Individual</label>
+                <input type="radio" id="two" name="entry.630845017" value="two" required />
+                <label for="two" id="d">Team (max 2 members)</label><br /><br />
 
-                    <input type="text" id="teamcode" name="entry.241959471"
-                        placeholder="What is your Preferred Programming Language?" required /><br /><br />
+                <input type="text" id="teamcode" name="entry.241959471" placeholder="Team Code" required /><br /><br />
 
-                    <input type="file" id="payment-screenshot" name="payment-screenshot"
-                        accept=".jpg, .jpeg, .png, .pdf" /><br /><br />
+                <input type="text" id="teamcode" name="entry.241959471"
+                    placeholder="What is your Preferred Programming Language?" required /><br /><br />
 
-                    <input type="submit" value="Submit" id="submit" />
+                <input type="file" id="payment-screenshot" name="payment-screenshot"
+                    accept=".jpg, .jpeg, .png, .pdf" /><br /><br />
+
+                <input type="submit" value="Submit" id="submit" />
             </form>
         </div>
     </div>
