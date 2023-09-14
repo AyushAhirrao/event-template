@@ -10,12 +10,17 @@
 }
 
 .heroContainer {
-  height: 90vh;
+  /* height: 90vh; */
+  background: rgba(0, 0, 0, 0.5) url("../assets/images/bg.svg");
+  background-position: right;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 865px) {
   .heroContainer {
-    height: 92vh;
+    /* height: 92vh; */
   }
 }
 
@@ -57,6 +62,7 @@
   align-items: center;
   margin-top: 3rem;
   display: none;
+  padding: 5rem;
 }
 
 .hero-cta-btn-wrapper button {
