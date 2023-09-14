@@ -1,0 +1,29 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+#container div {
+    margin: 1rem;
+}
+
+
+.quiz-container {
+    width: 10rem;
+}
+
+.code-container {
+    width: 10rem;
+}
+
+#quiz-btn {
+    width: 100%;
+}
+
+#code-btn {
+    width: 100%;
+}
