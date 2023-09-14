@@ -173,9 +173,7 @@ label {
 	cursor: pointer;
 }
 
-.upi-input-style:hover::before {
-	background-color: #2672b9;
-}
+
 @media only screen and (max-width: 1032px) {
 	.formContentContainer input,
 	select {
@@ -229,8 +227,11 @@ label {
 	select {
 		width: 17rem;
 	}
-	.submit input {
-		width: 20rem;
+		.submit input {
+		width: 11rem;
+	}
+	.submit input[type="submit"] {
+		font-size: 1.2rem;
 	}
 	.formContentContainer .upiQRContainer span,
 	label {
