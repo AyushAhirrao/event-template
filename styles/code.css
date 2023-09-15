@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 90vh;
     padding: 2rem;
     flex-direction: column;
 }
@@ -30,4 +30,12 @@
     padding: 2rem;
     flex-direction: column;
     color: white;
+}
+
+.submitCodeContainer{
+    padding: 5rem;
+    background: var(--primary-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
