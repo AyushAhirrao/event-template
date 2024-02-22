@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Code Saga | Schedule</title>
+
+    <!-- styles  -->
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/utils.css" />
+    <link rel="stylesheet" href="../styles/code.css" />
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="code">
+            <script>
+                SEC_HTTPS = true;
+                SEC_BASE = "compilers.widgets.sphere-engine.com";
+                (function (d, s, id) {
+                    SEC = window.SEC || (window.SEC = []);
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return; js = d.createElement(s); js.id = id;
+                    js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, "script", "sphere-engine-compilers-jssdk"));
+            </script>
+            <div class="sec-widget" data-widget="07cca21e20bd61186d02bb238d2be29e"></div>
+        </div>
+    </div>
+
+
+    <div class="submitCodeContainer">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfSFtmBT6mNZaAUzjZZGIW0mz6oOgauDlGrqtY54RFptcWnUw/viewform?embedded=true"
+            width="640" height="1473" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+
+
+    <div id="eliminant-container" style="display: none">
+        <h3>You caught cheating, you are eliminated successfully</h3>
+    </div>
+
+    <script>
+        let unfocus_count;
+        // localStorage.clear()
+        // Initialize unfocus_count if it doesn't exist in localStorage
+        if (localStorage.getItem("unfocus_count") === null) {
+            localStorage.setItem("unfocus_count", 0);
+        }
+
+        window.addEventListener("load", () => {
+            unfocus_count = parseInt(localStorage.getItem("unfocus_count"));
+
+            if (unfocus_count >= 3 || localStorage.getItem('eliminated')) {
+                console.log("eliminated");
+                container.style = "display: none";
+                eliminate_container.style = "display: flex";
+                localStorage.setItem("eliminated", true);
+            }
+        });
+
+
+        let eliminate_container = document.getElementById("eliminant-container");
+        let container = document.getElementById("container");
+
+        // Check if the Page Visibility API is supported
+        if (typeof document.hidden !== "undefined") {
+            // Add an event listener to detect changes in tab visibility
+            document.addEventListener("visibilitychange", function () {
+                if (document.hidden) {
+                    // The tab is now unfocused
+                    unfocus_count++;
+                    localStorage.setItem("unfocus_count", unfocus_count);
+                    alert("warning! don't change the tab")
+                } else {
+                    if (parseInt(unfocus_count) >= 3 || localStorage.getItem('eliminated')) {
+                        container.style = "display: none";
+                        eliminate_container.style = "display: flex";
+                        localStorage.setItem("eliminated", true)
+                    }
+                }
+            });
+        } else {
+            // The Page Visibility API is not supported
+            alert("Page Visibility API is not supported in this browser.");
+        }
+
+    </script>
+</body>
+
+</html>

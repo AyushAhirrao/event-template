@@ -1,0 +1,28 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+#container div {
+    margin: 1rem;
+}
+
+#quiz-frame {
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+}
+
+#eliminant-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 2rem;
+    flex-direction: column;
+    color: white;
+}

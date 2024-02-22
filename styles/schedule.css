@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 85%;
+    /* background: #000; */
+}
+
+.schedule-container {
+    background: var(--primary-clr);
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 1.2rem 1rem;
+    overflow-y: auto;
+}
+
+.schedule-card {
+    border-radius: 8px;
+    background: rgb(35, 35, 37);
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.schedule-subcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 6rem;
+}
+
+.schedule-subcard div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0.4rem;
+}
+
+
+@media only screen and (max-width: 1272px) {
+    .schedule-subcard {
+        padding: 1rem 4rem;
+    }
+}
+
+@media only screen and (max-width: 1056px) {
+    .schedule-subcard {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .schedule-subcard {
+        font-size: 1.2rem;
+        padding: 1rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .schedule-card {
+        flex-direction: column;
+        padding: 0.1rem 0.2rem;
+    }
+}
